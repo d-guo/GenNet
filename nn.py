@@ -1,11 +1,29 @@
-#cnn
+#nn
 import torch
 import torch.nn as nn
-import torchvision
+
+#create a NN with the specified parameters in param
+#params[0] = number of layers
+#params[1] = optimizer
+#params[2] = activator
+def create_NN(params):
+	return NN(params[0], params[1], params[2], params)
 
 class NN(nn.Module):
-	def __init__(self, num_layers):
+	def __init__(self, num_layers, optimizer, activator, params):
 		super(ConvNet, self).__init__()
+
+		#keep track of own params
+		self.params = params
+
+		#set optimizer
+		#can be one of the following: Adadelta, Adagrad, Adam, SparseAdam, Adamax, ASGD, LBFGS, RMSprop, Rprop, SGD
+		self.optimizer = optimizer
+
+		#set activation function
+		#can be one of the following: ELU, Hardshrink, Hardtanh, LeakyReLU, LogSigmoid, PReLU, ReLUm ReLU6, RReLU, SELU, CELU, Sigmoid, Softplus, Softshrink, Softsign, Tanh, TanhShrink, Threshold
+		self.activator = activator
+
 		#store layers in list
 		self.layers = list()
 
