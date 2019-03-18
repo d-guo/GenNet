@@ -78,6 +78,43 @@ def train(model):
 			if(batch_id % 25 == 0):
 				print("epoch: [{}/{}]; batch: [{}]; loss: {} ".format(epoch_id + 1, epochs, batch_id + 1, loss.item()))
 
+
+def test_model_performance(model):
+	#configure devices
+	if(torch.cuda.is_available()):
+		device = torch.device('cuda:0')
+	else:
+		device = torch.device('cpu')
+
+	#set up hyerparameters
+	epochs = 5
+	batch_size = 100
+
+	#data loader
+	test_loader = torch.utils.data.DataLoader(data.get_mnist_test(), batch_size = 1, shuffle = True)
+
+	#testing
+	with torch.no_grad():
+		correct = 0
+		total = 0
+		for batch_id, (inps, vals) in enumerate(test_loader):
+			#format inps and vals
+			inps = inps.to(device)
+			vals = vals.to(device)
+
+			#forward pass
+			outs = model(inps)
+			pred = outs.data.max(1)[1]
+
+			#increment accordingly
+			total += 1
+			if(pred[0].item() == vals[0].item()):
+				correct += 1
+
+	return correct / total
+
+
+
 def save_model(model, model_name):
 	torch.save(model.state_dict(), "{}".format(model_name))
 	file = open("{}params".format(model_name), "w+")
@@ -86,6 +123,8 @@ def save_model(model, model_name):
 	file.write(str(model.optimizer_id) + "\n")
 	file.close()
 
+"""
 net = nn.NN(3, 5, 2)
 train(net)
 save_model(net, "test")
+"""

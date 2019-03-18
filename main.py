@@ -1,6 +1,9 @@
 import nn
+import evol
 import matplotlib.pyplot as plt
 import data
+
+print("SS")
 
 file = open("testparams", "r")
 lines = file.readlines()
@@ -12,6 +15,13 @@ model = nn.NN(p1, p2, p3)
 model.load_state_dict(nn.torch.load("test"))
 
 model.eval()
+
+print(evol.test_model_performance(model))
+
+
+
+"""
+
 
 test_data = data.get_mnist_test()
 
@@ -28,3 +38,5 @@ print("Predicted Num: {}".format(pred[0]))
 
 plt.imshow(image)
 plt.show()
+
+"""
