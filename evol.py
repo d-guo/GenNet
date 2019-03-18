@@ -40,6 +40,12 @@ def create_NN():
 	return nn.NN(num_layers, actf, optim_id)
 
 def train(model):
+	#configure devices
+	if(torch.cuda.is_available()):
+		device = torch.device('cuda:0')
+	else:
+		device = torch.device('cpu')
+
 	#set up hyerparameters
 	epochs = 5
 	batch_size = 100
@@ -68,7 +74,7 @@ def train(model):
 		optimizer = nn.torch.optim.SGD(model.parameters(), lr = learning_rate)
 
 	#set up loss function
-	criterion = nn.nn.CrossEntropyLoss()
+	loss_func = nn.nn.CrossEntropyLoss()
 
 	#data loader
 	train_loader = torch.utils.data.DataLoader(data.get_mnist_train(), batch_size = batch_size, shuffle = True)
@@ -76,18 +82,13 @@ def train(model):
 	#training
 	for epoch_id in range(epochs):
 		for batch_id, (inps, vals) in enumerate(train_loader):
-			#format inps
-			inps.resize_(batch_size, 1, 784)
+			#format inps and vals
+			inps = inps.to(device)
+			vals = vals.to(device)
 
 			#forward pass
 			outs = model(inps)
-
-			for i in range(784):
-				print(inps[99][0][i], end = " ")
-				if(i + 1 % 28 == 0):
-					print()
-
-			loss = criterion(outs, vals)
+			loss = loss_func(outs, vals)
 
 			#backward and optimize
 			optimizer.zero_grad()

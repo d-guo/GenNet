@@ -63,4 +63,5 @@ class NN(nn.Module):
 			nn.Linear(96, 10))
 
 	def forward(self, x):
-		return self.layers(x)
+		out = x.reshape(x.size(0), -1)
+		return self.layers(out)
