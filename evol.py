@@ -29,41 +29,10 @@ def create_NN():
 	if(actf_id  == 9):
 		actf = nn.nn.CELU()
 
-	#create neural network
-	net = nn.NN(num_layers, actf)
-
 	#pick random optimizer
 	optim_id = random.randint(0, 10)
-	if(optim_id  == 0):
-		optim = nn.torch.optim.Adadelta(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 1):
-		optim = nn.torch.optim.Adagrad(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 2):
-		optim = nn.torch.optim.Adam(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 3):
-		optim = nn.torch.optim.SparseAdam(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 4):
-		optim = nn.torch.optim.Adamax(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 5):
-		optim = nn.torch.optim.ASGD(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 6):
-		optim = nn.torch.optim.LBFGS(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 7):
-		optim = nn.torch.optim.RMSprop(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 8):
-		optim = nn.torch.optim.Rprop(net.parameters())
-		net.optimizer = optim
-	if(optim_id  == 9):
-		optim = nn.torch.optim.SGD(net.parameters())
-		net.optimizer = optim
-	return net
+	
+	#create neural network and return
+	net = nn.NN(num_layers, actf, optim_id)
 
 foo = create_NN()
