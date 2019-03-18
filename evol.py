@@ -76,13 +76,17 @@ def train(model):
 	#training
 	for epoch_id in range(epochs):
 		for batch_id, (inps, vals) in enumerate(train_loader):
-			#format inps and vals
-			for inp in inps:
-				inp.resize(784, 1)
-				print(inp)
+			#format inps
+			inps.resize_(batch_size, 1, 784)
 
 			#forward pass
 			outs = model(inps)
+
+			for i in range(784):
+				print(inps[99][0][i], end = " ")
+				if(i + 1 % 28 == 0):
+					print()
+
 			loss = criterion(outs, vals)
 
 			#backward and optimize
