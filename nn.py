@@ -3,16 +3,40 @@ import torch
 import torch.nn as nn
 
 class NN(nn.Module):
-	def __init__(self, num_layers, activator, optimizer_id):
+	def __init__(self, num_layers, activator_id, optimizer_id):
 		super(NN, self).__init__()
+		#track number of layers
+		self.num_layers = num_layers
 
-		#set activation function
-		#can be one of the following: ELU, Hardshrink, LeakyReLU, LogSigmoid, PReLU, ReLU, ReLU6, RReLU, SELU, CELU, Sigmoid
-		self.activator = activator
+		#track activation function
+		self.activator_id = activator_id
 
 		#track optimizer id
 		#can be one of the following: Adadelta, Adagrad, Adam, SparseAdam, Adamax, ASGD, LBFGS, RMSprop, Rprop, SGD
 		self.optimizer_id = optimizer_id
+
+		#set activation function
+		#can be one of the following: ELU, Hardshrink, LeakyReLU, LogSigmoid, PReLU, ReLU, ReLU6, RReLU, SELU, CELU, Sigmoid
+		if(activator_id  == 0):
+			self.activator = nn.ELU()
+		elif(activator_id  == 1):
+			self.activator = nn.Hardshrink()
+		elif(activator_id  == 2):
+			self.activator = nn.LeakyReLU()
+		elif(activator_id  == 3):
+			self.activator = nn.LogSigmoid()
+		elif(activator_id  == 4):
+			self.activator = nn.PReLU()
+		elif(activator_id  == 5):
+			self.activator = nn.ReLU()
+		elif(activator_id  == 6):
+			self.activator = nn.ReLU6()
+		elif(activator_id  == 7):
+			self.activator = nn.RReLU()
+		elif(activator_id  == 8):
+			self.activator = nn.SELU()
+		elif(activator_id  == 9):
+			self.activator = nn.CELU()
 
 		#we want to input a 28x28 images (784 values) and return an integer 0-9
 		#to do this, we take 784 - 10 = 774 which factors into 2, 3, 6, 9

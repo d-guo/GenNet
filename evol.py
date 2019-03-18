@@ -12,32 +12,12 @@ def create_NN():
 
 	#pick activation function
 	actf_id = random.randint(0, 9)
-	if(actf_id  == 0):
-		actf = nn.nn.ELU()
-	elif(actf_id  == 1):
-		actf = nn.nn.Hardshrink()
-	elif(actf_id  == 2):
-		actf = nn.nn.LeakyReLU()
-	elif(actf_id  == 3):
-		actf = nn.nn.LogSigmoid()
-	elif(actf_id  == 4):
-		actf = nn.nn.PReLU()
-	elif(actf_id  == 5):
-		actf = nn.nn.ReLU()
-	elif(actf_id  == 6):
-		actf = nn.nn.ReLU6()
-	elif(actf_id  == 7):
-		actf = nn.nn.RReLU()
-	elif(actf_id  == 8):
-		actf = nn.nn.SELU()
-	elif(actf_id  == 9):
-		actf = nn.nn.CELU()
 
 	#pick random optimizer
 	optim_id = random.randint(0, 9)
 	
 	#create neural network and return
-	return nn.NN(num_layers, actf, optim_id)
+	return nn.NN(num_layers, actf_id, optim_id)
 
 def train(model):
 	#configure devices
@@ -98,7 +78,14 @@ def train(model):
 			if(batch_id % 25 == 0):
 				print("epoch: [{}/{}]; batch: [{}]; loss: {} ".format(epoch_id + 1, epochs, batch_id + 1, loss.item()))
 
+def save_model(model, model_name):
+	torch.save(model.state_dict(), "{}".format(model_name))
+	file = open("{}params".format(model_name), "w+")
+	file.write(str(model.num_layers) + "\n")
+	file.write(str(model.activator_id) + "\n")
+	file.write(str(model.optimizer_id) + "\n")
+	file.close()
 
-net = create_NN()
-
+net = nn.NN(3, 5, 2)
 train(net)
+save_model(net, "test")
