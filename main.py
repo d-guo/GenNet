@@ -3,15 +3,7 @@ import evol
 import matplotlib.pyplot as plt
 import data
 
-evol.evolve(4, 2, 0)
-
-
-"""
-
-
-print("SS")
-
-file = open("testparams", "r")
+file = open("gennetparams", "r")
 lines = file.readlines()
 p1 = int(lines[0])
 p2 = int(lines[1])
@@ -41,5 +33,3 @@ print("Predicted Num: {}".format(pred[0]))
 
 plt.imshow(image)
 plt.show()
-
-"""

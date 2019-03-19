@@ -185,27 +185,33 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 		print("Generation {}".format(gen_id))
 		#train each of the members of the generation
 		for mem_id in range(pop_size):
+			print("training member {}".format(mem_id))
 			pop[mem_id] = train(pop[mem_id])
-		print(pop)
+
 		#get performance from each of the members and remove those below averge
 		#store performance score in list
 		perf_scores = list()
-		for mem in pop:
-			perf_scores.append(test_model_performance(mem))
+		for mem_id in range(len(pop)):
+			print("testing member {}".format(mem_id))
+			perf_scores.append(test_model_performance(pop[mem_id]))
 
 		#print progress of current population
+		print("Performance Summary of Generation {}:".format(gen_id))
 		for i in range(pop_size):
-			print("Member {} achieved accuracy of {}".format(i, perf_scores[i]))
+			print("Member {} achieved accuracy of {} with parameters ({}, {}, {})".format(i, perf_scores[i], pop[i].num_layers, pop[i].activator_id, pop[i].optimizer_id))
 
 		#don't do the following for the last generation
 		if(gen_id != num_gens - 1):
 			#find average and keep those above it
 			average_perf = sum(perf_scores) / pop_size
+			print("Average accuracy was {}".format(average_perf))
 			new_pop = list()
 
+			print("Surviving members:")
 			for i in range(pop_size):
 				if(perf_scores[i] >= average_perf):
 					new_pop.append(pop[i])
+					print("member {} survived".format(i))
 
 			pop = new_pop
 
@@ -223,6 +229,9 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 					key = random.random()
 					if(key <= chance_of_mutation):
 						new_NN = mutate(new_NN)
+						print("bred together members {} and {}, child mutated".format(m1_id, m2_id))
+					else:
+						print("bred together members {} and {}, child not mutated".format(m1_id, m2_id))
 
 					pop.append(new_NN)
 
@@ -234,9 +243,10 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 			best_perf_id = -1
 
 			for i in range(pop_size):
-				if(perf_scores[i] > popbest_perf_score):
-					popbest_perf_score = perf_scores[i]
+				if(perf_scores[i] > best_perf_score):
+					best_perf_score = perf_scores[i]
 					best_perf_id = i
 
-				save(pop[best_perf_id], "gennet")
+				print("Best performer was member {} with an accuracy of {}".format(best_perf_id, best_perf_score))
+				save_model(pop[best_perf_id], "gennet")
 				return pop[best_perf_id]
