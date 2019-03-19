@@ -1,5 +1,5 @@
 # GenNet
-An evolutionary algorithm approach to design the optimal MLP architecture for classifying MNIST images.
+An evolutionary algorithm approach to design the optimal MLP architecture in PyTorch for classifying MNIST images.
 
 ## Use
 Enter "python main.py" in command line to see performance of the "gennet" model.
