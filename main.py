@@ -3,6 +3,11 @@ import evol
 import matplotlib.pyplot as plt
 import data
 
+evol.evolve(20, 10, 0.2)
+
+
+"""
+
 file = open("gennetparams", "r")
 lines = file.readlines()
 p1 = int(lines[0])
@@ -13,10 +18,6 @@ model = nn.NN(p1, p2, p3)
 model.load_state_dict(nn.torch.load("test"))
 
 model.eval()
-
-print(evol.test_model_performance(model))
-
-
 
 test_data = data.get_mnist_test()
 
@@ -33,3 +34,5 @@ print("Predicted Num: {}".format(pred[0]))
 
 plt.imshow(image)
 plt.show()
+
+"""

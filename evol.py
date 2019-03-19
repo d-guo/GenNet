@@ -185,7 +185,7 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 		print("Generation {}".format(gen_id))
 		#train each of the members of the generation
 		for mem_id in range(pop_size):
-			print("training member {}".format(mem_id))
+			print("training member {} ({}, {}, {})".format(mem_id, pop[mem_id].num_layers, pop[mem_id].activator_id, pop[mem_id].optimizer_id))
 			pop[mem_id] = train(pop[mem_id])
 
 		#get performance from each of the members and remove those below averge
@@ -205,15 +205,19 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 			#find average and keep those above it
 			average_perf = sum(perf_scores) / pop_size
 			print("Average accuracy was {}".format(average_perf))
+
 			new_pop = list()
+			surv_inds = list()
 
 			print("Surviving members:")
 			for i in range(pop_size):
 				if(perf_scores[i] >= average_perf):
 					new_pop.append(pop[i])
+					#track indices of surviving members for printing
+					surv_inds.append(i)
 					print("member {} survived".format(i))
 
-			pop = new_pop
+			pop = new_pop.copy()
 
 			#fill in remaining population members by breeding members of population
 			while(len(pop) < pop_size):
@@ -229,14 +233,15 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 					key = random.random()
 					if(key <= chance_of_mutation):
 						new_NN = mutate(new_NN)
-						print("bred together members {} and {}, child mutated".format(m1_id, m2_id))
+						print("bred together members {} and {}, child mutated".format(surv_inds[m1_id], surv_inds[m2_id]))
 					else:
-						print("bred together members {} and {}, child not mutated".format(m1_id, m2_id))
+						print("bred together members {} and {}, child not mutated".format(surv_inds[m1_id], surv_inds[m2_id]))
 
 					pop.append(new_NN)
 
 			#reset populations
 			pop = reset_pop(pop)
+			print()
 		else:
 			#save best performer after all generations
 			best_perf_score = -1
