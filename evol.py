@@ -14,11 +14,21 @@ def create_NN():
 	actf_id = random.randint(0, 9)
 
 	#pick random optimizer
-	optim_id = random.randint(0, 9)
+	optim_id = random.randint(0, 7)
 	
 	#create neural network and return
 	return nn.NN(num_layers, actf_id, optim_id)
 
+#save model and its parameters to be loaded later
+def save_model(model, model_name):
+	torch.save(model.state_dict(), "{}".format(model_name))
+	file = open("{}params".format(model_name), "w+")
+	file.write(str(model.num_layers) + "\n")
+	file.write(str(model.activator_id) + "\n")
+	file.write(str(model.optimizer_id) + "\n")
+	file.close()
+
+#trains an individual model
 def train(model):
 	#configure devices
 	if(torch.cuda.is_available()):
@@ -27,7 +37,7 @@ def train(model):
 		device = torch.device('cpu')
 
 	#set up hyerparameters
-	epochs = 5
+	epochs = 1
 	batch_size = 100
 	learning_rate = 0.01
 
@@ -39,18 +49,14 @@ def train(model):
 	elif(model.optimizer_id == 2):
 		optimizer = nn.torch.optim.Adam(model.parameters(), lr = learning_rate)
 	elif(model.optimizer_id == 3):
-		optimizer = nn.torch.optim.SparseAdam(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 4):
 		optimizer = nn.torch.optim.Adamax(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 5):
+	elif(model.optimizer_id == 4):
 		optimizer = nn.torch.optim.ASGD(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 6):
-		optimizer = nn.torch.optim.LBFGS(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 7):
+	elif(model.optimizer_id == 5):
 		optimizer = nn.torch.optim.RMSprop(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 8):
+	elif(model.optimizer_id == 6):
 		optimizer = nn.torch.optim.Rprop(model.parameters(), lr = learning_rate)
-	elif(model.optimizer_id == 9):
+	elif(model.optimizer_id == 7):
 		optimizer = nn.torch.optim.SGD(model.parameters(), lr = learning_rate)
 
 	#set up loss function
@@ -75,10 +81,9 @@ def train(model):
 			loss.backward()
 			optimizer.step()
 
-			if(batch_id % 25 == 0):
-				print("epoch: [{}/{}]; batch: [{}]; loss: {} ".format(epoch_id + 1, epochs, batch_id + 1, loss.item()))
+	return model
 
-
+#tests individual model performance
 def test_model_performance(model):
 	#configure devices
 	if(torch.cuda.is_available()):
@@ -86,12 +91,14 @@ def test_model_performance(model):
 	else:
 		device = torch.device('cpu')
 
+	model.eval()
+
 	#set up hyerparameters
 	epochs = 5
-	batch_size = 100
+	batch_size = 1
 
 	#data loader
-	test_loader = torch.utils.data.DataLoader(data.get_mnist_test(), batch_size = 1, shuffle = True)
+	test_loader = torch.utils.data.DataLoader(data.get_mnist_test(), batch_size = batch_size, shuffle = True)
 
 	#testing
 	with torch.no_grad():
@@ -113,18 +120,123 @@ def test_model_performance(model):
 
 	return correct / total
 
+#mutates one parameter of the model
+def mutate(model):
+	#choose key to determine which parameter to mutate
+	key = random.randint(0, 2)
 
+	if(key == 0):
+		return nn.NN(random.choice([2, 3, 6, 9]), model.activator_id, model.optimizer_id)
+	elif(key == 1):
+		return nn.NN(model.num_layers, random.randint(0, 9), model.optimizer_id)
+	elif(key == 2):
+		return nn.NN(model.num_layers, model.activator_id, random.randint(0, 7))
 
-def save_model(model, model_name):
-	torch.save(model.state_dict(), "{}".format(model_name))
-	file = open("{}params".format(model_name), "w+")
-	file.write(str(model.num_layers) + "\n")
-	file.write(str(model.activator_id) + "\n")
-	file.write(str(model.optimizer_id) + "\n")
-	file.close()
+#creates child using parameters from two parents
+def breed(m1, m2):
+	#choose keys to determine which parent to take parameter from
+	key1 = random.randint(0, 1)
+	key2 = random.randint(0, 1)
+	key3 = random.randint(0, 1)
 
-"""
-net = nn.NN(3, 5, 2)
-train(net)
-save_model(net, "test")
-"""
+	if(key1 == 0):
+		num_layers = m1.num_layers
+	else:
+		num_layers = m2.num_layers
+	if(key2 == 0):
+		activator_id = m1.activator_id
+	else:
+		activator_id = m2.activator_id
+	if(key3 == 0):
+		optimizer_id = m1.optimizer_id
+	else:
+		optimizer_id = m2.optimizer_id
+
+	return nn.NN(num_layers, activator_id, optimizer_id)
+
+#creates initial population for training
+def initial_pop(pop_num):
+	#store population in list
+	pop = list()
+
+	for i in range(pop_num):
+		pop.append(create_NN())
+
+	return pop
+
+#prevent double training
+def reset_pop(pop):
+	#new population without any training
+	fresh_pop = list()
+
+	#create new NN for each member of population
+	for mem in pop:
+		fresh_pop.append(nn.NN(mem.num_layers, mem.activator_id, mem.optimizer_id))
+
+	return fresh_pop
+
+#actual evolution
+def evolve(pop_size, num_gens, chance_of_mutation):
+	#create initial population
+	pop = initial_pop(pop_size)
+
+	#evolution through generations
+	for gen_id in range(num_gens):
+		print("Generation {}".format(gen_id))
+		#train each of the members of the generation
+		for mem_id in range(pop_size):
+			pop[mem_id] = train(pop[mem_id])
+		print(pop)
+		#get performance from each of the members and remove those below averge
+		#store performance score in list
+		perf_scores = list()
+		for mem in pop:
+			perf_scores.append(test_model_performance(mem))
+
+		#print progress of current population
+		for i in range(pop_size):
+			print("Member {} achieved accuracy of {}".format(i, perf_scores[i]))
+
+		#don't do the following for the last generation
+		if(gen_id != num_gens - 1):
+			#find average and keep those above it
+			average_perf = sum(perf_scores) / pop_size
+			new_pop = list()
+
+			for i in range(pop_size):
+				if(perf_scores[i] >= average_perf):
+					new_pop.append(pop[i])
+
+			pop = new_pop
+
+			#fill in remaining population members by breeding members of population
+			while(len(pop) < pop_size):
+				#pick two random parents
+				m1_id = random.randint(0, len(new_pop) - 1)
+				m2_id = random.randint(0, len(new_pop) - 1)
+
+				#breed together if parents are not the same member
+				if(m1_id != m2_id):
+					new_NN = breed(new_pop[m1_id], new_pop[m2_id])
+
+					#chance to mutate new child
+					key = random.random()
+					if(key <= chance_of_mutation):
+						new_NN = mutate(new_NN)
+
+					pop.append(new_NN)
+
+			#reset populations
+			pop = reset_pop(pop)
+		else:
+			#save best performer after all generations
+			best_perf_score = -1
+			best_perf_id = -1
+
+			for i in range(pop_size):
+				if(perf_scores[i] > popbest_perf_score):
+					popbest_perf_score = perf_scores[i]
+					best_perf_id = i
+
+				save(pop[best_perf_id], "gennet")
+				return pop[best_perf_id]

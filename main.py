@@ -3,6 +3,12 @@ import evol
 import matplotlib.pyplot as plt
 import data
 
+evol.evolve(4, 2, 0)
+
+
+"""
+
+
 print("SS")
 
 file = open("testparams", "r")
@@ -18,9 +24,6 @@ model.eval()
 
 print(evol.test_model_performance(model))
 
-
-
-"""
 
 
 test_data = data.get_mnist_test()

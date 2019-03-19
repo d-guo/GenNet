@@ -12,7 +12,7 @@ class NN(nn.Module):
 		self.activator_id = activator_id
 
 		#track optimizer id
-		#can be one of the following: Adadelta, Adagrad, Adam, SparseAdam, Adamax, ASGD, LBFGS, RMSprop, Rprop, SGD
+		#can be one of the following: Adadelta, Adagrad, Adam, Adamax, ASGD, RMSprop, Rprop, SGD
 		self.optimizer_id = optimizer_id
 
 		#set activation function
