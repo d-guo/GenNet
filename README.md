@@ -5,6 +5,7 @@ An evolutionary algorithm approach to design the optimal MLP architecture in PyT
 Enter "python main.py" in command line to see performance of the "gennet" model.
 
 ## Prerequisites
+Python \
 PyTorch
 
 ## Code Details
