@@ -9,9 +9,9 @@ Python \
 PyTorch
 
 ## Code Details
-data.py contains the torch calls to retrieve images form the MNIST database \
-nn.py contains the outline for the MLP neural network \
-evol.py contains the evolutionary algorithm used to discover new architectures and finds the best one \
+"data.py" contains the torch calls to retrieve images form the MNIST database. \
+"nn.py" contains the outline for the MLP neural network. \
+"evol.py" contains the evolutionary algorithm used to discover new architectures and finds the best one.
 
 ## Results
 The evolutionary algorithm found the following architecture to be optimal after 10 generations with a population size of 20 \
