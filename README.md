@@ -6,7 +6,8 @@ Enter "python main.py" in command line to see performance of the "gennet" model.
 
 ## Prerequisites
 Python \
-PyTorch
+PyTorch \
+matplotlib
 
 ## Code Details
 "data.py" contains the torch calls to retrieve images form the MNIST database. \
