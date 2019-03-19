@@ -25,7 +25,7 @@ def save_model(model, model_name):
 	file = open("{}params".format(model_name), "w+")
 	file.write(str(model.num_layers) + "\n")
 	file.write(str(model.activator_id) + "\n")
-	file.write(str(model.optimizer_id) + "\n")
+	file.write(str(model.optimizer_id))
 	file.close()
 
 #trains an individual model
