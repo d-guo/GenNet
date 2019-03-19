@@ -20,4 +20,4 @@ NN( \
     (1): ReLU() \
     (2): Linear(in_features=397, out_features=10, bias=True) \
 ). \
-This architecture was able to achieve 96.6% accuracy on new images. \
+This architecture was able to achieve 96.6% accuracy on new images.
