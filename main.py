@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import data
 
 
-evol.evolve(20, 10, 0.2)
+#evol.evolve(20, 10, 0.2)
 
-"""
+
 def test(model):
 	#configure devices
 	if(nn.torch.cuda.is_available()):
@@ -40,14 +40,13 @@ def test(model):
 			total += 1
 			if(pred[0].item() == vals[0].item()):
 				correct += 1
-			else:
-				print("Actual number: {}".format(vals[0].item()))
-				print("Predicted number: {}".format(pred[0].item()))
-				plt.imshow(inps[0][0])
-				plt.show()
+			print("Actual number: {}".format(vals[0].item()))
+			print("Predicted number: {}".format(pred[0].item()))
+			plt.imshow(inps[0][0])
+			plt.show()
 
 
-	return correct / total
+	print(correct / total)
 
 
 file = open("gennetparams", "r")
@@ -62,34 +61,3 @@ model.load_state_dict(nn.torch.load("gennet"))
 model.eval()
 
 test(model)
-
-
-
-file = open("gennetparams", "r")
-lines = file.readlines()
-p1 = int(lines[0])
-p2 = int(lines[1])
-p3 = int(lines[2])
-
-model = nn.NN(p1, p2, p3)
-model.load_state_dict(nn.torch.load("gennet"))
-
-model.eval()
-
-test_data = data.get_mnist_test()
-
-test_loader = nn.torch.utils.data.DataLoader(test_data, 1, shuffle = True)
-
-train_iter = iter(test_loader)
-images, labels = train_iter.next()
-image = images[0][0]
-
-output = model(images)
-pred = output.data.max(1)[1]
-print("Actual Num: {}".format(labels[0]))
-print("Predicted Num: {}".format(pred[0]))
-
-plt.imshow(image)
-plt.show()
-
-"""
