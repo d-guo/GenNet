@@ -8,7 +8,12 @@ from torch.autograd import Variable
 #create a NN with random parameters
 def create_NN():
 	#pick number of layers
-	num_layers = random.choice([2, 3, 6, 9])
+	num_layers = random.randint(1, 6)
+
+	#pick neurons in each layer
+	neurons = list()
+	for i in range(num_layers - 1):
+		neurons.append(random.randint(80, 1000))
 
 	#pick activation function
 	actf_id = random.randint(0, 9)
@@ -17,13 +22,15 @@ def create_NN():
 	optim_id = random.randint(0, 7)
 	
 	#create neural network and return
-	return nn.NN(num_layers, actf_id, optim_id)
+	return nn.NN(num_layers, neurons, actf_id, optim_id)
 
 #save model and its parameters to be loaded later
 def save_model(model, model_name):
 	torch.save(model.state_dict(), "{}".format(model_name))
 	file = open("{}params".format(model_name), "w+")
 	file.write(str(model.num_layers) + "\n")
+	for i in range(model.num_layers - 1):
+		file.write(str(model.neurons[i]) + "\n")
 	file.write(str(model.activator_id) + "\n")
 	file.write(str(model.optimizer_id))
 	file.close()
@@ -122,15 +129,7 @@ def test_model_performance(model):
 
 #mutates one parameter of the model
 def mutate(model):
-	#choose key to determine which parameter to mutate
-	key = random.randint(0, 2)
-
-	if(key == 0):
-		return nn.NN(random.choice([2, 3, 6, 9]), model.activator_id, model.optimizer_id)
-	elif(key == 1):
-		return nn.NN(model.num_layers, random.randint(0, 9), model.optimizer_id)
-	elif(key == 2):
-		return nn.NN(model.num_layers, model.activator_id, random.randint(0, 7))
+	return make_NN()
 
 #creates child using parameters from two parents
 def breed(m1, m2):
@@ -141,8 +140,10 @@ def breed(m1, m2):
 
 	if(key1 == 0):
 		num_layers = m1.num_layers
+		neurons = m1.neurons
 	else:
 		num_layers = m2.num_layers
+		neurons = m2.neurons
 	if(key2 == 0):
 		activator_id = m1.activator_id
 	else:
@@ -152,7 +153,7 @@ def breed(m1, m2):
 	else:
 		optimizer_id = m2.optimizer_id
 
-	return nn.NN(num_layers, activator_id, optimizer_id)
+	return nn.NN(num_layers, neurons, activator_id, optimizer_id)
 
 #creates initial population for training
 def initial_pop(pop_num):
@@ -171,7 +172,7 @@ def reset_pop(pop):
 
 	#create new NN for each member of population
 	for mem in pop:
-		fresh_pop.append(nn.NN(mem.num_layers, mem.activator_id, mem.optimizer_id))
+		fresh_pop.append(nn.NN(mem.num_layers, mem.neurons, mem.activator_id, mem.optimizer_id))
 
 	return fresh_pop
 
@@ -185,7 +186,7 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 		print("Generation {}".format(gen_id))
 		#train each of the members of the generation
 		for mem_id in range(pop_size):
-			print("training member {} ({}, {}, {})".format(mem_id, pop[mem_id].num_layers, pop[mem_id].activator_id, pop[mem_id].optimizer_id))
+			print("training member {} ({}, {}, {}, {})".format(mem_id, pop[mem_id].num_layers, pop[mem_id].neurons, pop[mem_id].activator_id, pop[mem_id].optimizer_id))
 			pop[mem_id] = train(pop[mem_id])
 
 		#get performance from each of the members and remove those below averge
@@ -198,7 +199,7 @@ def evolve(pop_size, num_gens, chance_of_mutation):
 		#print progress of current population
 		print("Performance Summary of Generation {}:".format(gen_id))
 		for i in range(pop_size):
-			print("Member {} achieved accuracy of {} with parameters ({}, {}, {})".format(i, perf_scores[i], pop[i].num_layers, pop[i].activator_id, pop[i].optimizer_id))
+			print("Member {} achieved accuracy of {} with parameters ({}, {}, {}, {})".format(i, perf_scores[i], pop[i].num_layers, pop[i].neurons, pop[i].activator_id, pop[i].optimizer_id))
 
 		#don't do the following for the last generation
 		if(gen_id != num_gens - 1):

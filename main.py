@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import data
 
 
-#evol.evolve(20, 10, 0.2)
+evol.evolve(20, 10, 0.2)
 
-
+"""
 def test(model):
 	#configure devices
 	if(nn.torch.cuda.is_available()):
@@ -52,12 +52,16 @@ def test(model):
 file = open("gennetparams", "r")
 lines = file.readlines()
 p1 = int(lines[0])
-p2 = int(lines[1])
-p3 = int(lines[2])
+neurons = list()
+for i in range(p1 - 1):
+	neurons.append(int(lines[i + 1]))
+p2 = int(lines[p1])
+p3 = int(lines[p1 + 1])
 
-model = nn.NN(p1, p2, p3)
+model = nn.NN(p1, neurons, p2, p3)
 model.load_state_dict(nn.torch.load("gennet"))
 
 model.eval()
 
 test(model)
+"""
