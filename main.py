@@ -3,6 +3,10 @@ import evol
 import matplotlib.pyplot as plt
 import data
 
+
+evol.evolve(20, 10, 0.2)
+
+"""
 def test(model):
 	#configure devices
 	if(nn.torch.cuda.is_available()):
@@ -58,12 +62,6 @@ model.load_state_dict(nn.torch.load("gennet"))
 model.eval()
 
 test(model)
-
-
-
-
-"""
-evol.evolve(20, 10, 0.2)
 
 
 
