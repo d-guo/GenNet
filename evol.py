@@ -129,7 +129,24 @@ def test_model_performance(model):
 
 #mutates one parameter of the model
 def mutate(model):
-	return create_NN()
+	key1 = random.random()
+	#complete mutation 10% of the itme
+	if(key <= 0.1):
+		return create_NN()
+	#otherwise just mutate one parameter
+	else:
+		key2 = random.randint(0, 2)
+		if(key2 == 0):
+		#change number of neurons in a random layer
+			layer_num = randint(0, model.num_layers - 2)
+			model.neurons[layer_num] = random.randint(80, 1000)
+			return nn.NN(model.num_layers, model.neurons, model.activator_id, model.optimizer_id)
+		elif(key2 == 1):
+		#change activator
+			return nn.NN(model.num_layers, model.neurons, random.randint(0, 9), model.optimizer_id)
+		elif(key2 == 2):
+		#change optimizer
+			return nn.NN(model.num_layers, model.neurons, model.activator_id, random.randint(0, 7))
 
 #creates child using parameters from two parents
 def breed(m1, m2):
