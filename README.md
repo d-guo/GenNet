@@ -17,9 +17,12 @@ matplotlib
 ## Results
 The evolutionary algorithm found the following architecture to be optimal after 10 generations with a population size of 20 \
 NN( \
-  (layers): \
-    (0): Linear(in_features=784, out_features=397, bias=True) \
-    (1): ReLU() \
-    (2): Linear(in_features=397, out_features=10, bias=True) \
-). \
+  (activator): CELU(alpha=1.0) \
+  (layers): Sequential( \
+    (0): Linear(in_features=784, out_features=421, bias=True) \
+    (1): CELU(alpha=1.0) \
+    (2): Linear(in_features=421, out_features=10, bias=True) \
+    (3): CELU(alpha=1.0) \
+  ) \
+) \
 This architecture was able to achieve 96.6% accuracy on new images.
