@@ -131,7 +131,7 @@ def test_model_performance(model):
 def mutate(model):
 	key1 = random.random()
 	#complete mutation 10% of the itme
-	if(key <= 0.1):
+	if(key1 <= 0.1):
 		return create_NN()
 	#otherwise just mutate one parameter
 	else:
