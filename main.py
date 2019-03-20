@@ -6,7 +6,7 @@ import data
 
 evol.evolve(20, 10, 0.2)
 
-"""
+
 def test(model):
 	#configure devices
 	if(nn.torch.cuda.is_available()):
@@ -48,7 +48,7 @@ def test(model):
 
 	print(correct / total)
 
-
+"""
 file = open("gennetparams", "r")
 lines = file.readlines()
 p1 = int(lines[0])
