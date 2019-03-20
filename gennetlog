@@ -1,0 +1,1655 @@
+Generation 0
+training member 0 (7, [687, 244, 479, 465, 470, 721], 9, 4)
+training member 1 (7, [624, 741, 149, 813, 586, 228], 6, 2)
+training member 2 (2, [421], 9, 3)
+training member 3 (6, [369, 835, 144, 356, 737], 1, 5)
+training member 4 (2, [476], 9, 1)
+training member 5 (9, [875, 235, 877, 268, 364, 86, 396, 987], 8, 2)
+training member 6 (6, [641, 733, 144, 179, 856], 7, 0)
+training member 7 (8, [254, 162, 385, 503, 405, 752, 909], 2, 4)
+training member 8 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 9 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 10 (6, [263, 324, 857, 909, 210], 9, 6)
+training member 11 (6, [787, 476, 852, 275, 84], 6, 6)
+training member 12 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 13 (3, [420, 91], 7, 5)
+training member 14 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 15 (6, [589, 259, 352, 329, 327], 6, 5)
+training member 16 (2, [543], 9, 5)
+training member 17 (1, [], 7, 6)
+training member 18 (3, [543, 947], 5, 2)
+training member 19 (6, [963, 706, 985, 758, 545], 8, 1)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 0:
+Member 0 achieved accuracy of 0.4048 with parameters (7, [687, 244, 479, 465, 470, 721], 9, 4)
+Member 1 achieved accuracy of 0.1008 with parameters (7, [624, 741, 149, 813, 586, 228], 6, 2)
+Member 2 achieved accuracy of 0.9612 with parameters (2, [421], 9, 3)
+Member 3 achieved accuracy of 0.1009 with parameters (6, [369, 835, 144, 356, 737], 1, 5)
+Member 4 achieved accuracy of 0.9312 with parameters (2, [476], 9, 1)
+Member 5 achieved accuracy of 0.1009 with parameters (9, [875, 235, 877, 268, 364, 86, 396, 987], 8, 2)
+Member 6 achieved accuracy of 0.1135 with parameters (6, [641, 733, 144, 179, 856], 7, 0)
+Member 7 achieved accuracy of 0.1032 with parameters (8, [254, 162, 385, 503, 405, 752, 909], 2, 4)
+Member 8 achieved accuracy of 0.9236 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 9 achieved accuracy of 0.8541 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 10 achieved accuracy of 0.1009 with parameters (6, [263, 324, 857, 909, 210], 9, 6)
+Member 11 achieved accuracy of 0.212 with parameters (6, [787, 476, 852, 275, 84], 6, 6)
+Member 12 achieved accuracy of 0.9253 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 13 achieved accuracy of 0.9083 with parameters (3, [420, 91], 7, 5)
+Member 14 achieved accuracy of 0.6792 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 15 achieved accuracy of 0.1009 with parameters (6, [589, 259, 352, 329, 327], 6, 5)
+Member 16 achieved accuracy of 0.5236 with parameters (2, [543], 9, 5)
+Member 17 achieved accuracy of 0.838 with parameters (1, [], 7, 6)
+Member 18 achieved accuracy of 0.4928 with parameters (3, [543, 947], 5, 2)
+Member 19 achieved accuracy of 0.2003 with parameters (6, [963, 706, 985, 758, 545], 8, 1)
+Average accuracy was 0.478775
+Surviving members:
+member 2 survived
+member 4 survived
+member 8 survived
+member 9 survived
+member 12 survived
+member 13 survived
+member 14 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 4 and 16, child not mutated
+bred together members 14 and 9, child mutated
+bred together members 17 and 8, child not mutated
+bred together members 18 and 12, child not mutated
+bred together members 14 and 9, child not mutated
+bred together members 2 and 14, child not mutated
+bred together members 2 and 9, child not mutated
+bred together members 8 and 12, child not mutated
+bred together members 14 and 13, child not mutated
+bred together members 18 and 12, child not mutated
+
+Generation 1
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (3, [420, 91], 7, 5)
+training member 6 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 7 (2, [543], 9, 5)
+training member 8 (1, [], 7, 6)
+training member 9 (3, [543, 947], 5, 2)
+training member 10 (2, [543], 9, 5)
+training member 11 (5, [986, 250, 895, 253], 9, 0)
+training member 12 (1, [], 0, 6)
+training member 13 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 14 (9, [990, 393, 182, 332, 308, 508, 321, 829], 9, 6)
+training member 15 (2, [421], 9, 3)
+training member 16 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 7, 2)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 1:
+Member 0 achieved accuracy of 0.9598 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9329 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9399 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.5645 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 4 achieved accuracy of 0.9424 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.8524 with parameters (3, [420, 91], 7, 5)
+Member 6 achieved accuracy of 0.1009 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 7 achieved accuracy of 0.8559 with parameters (2, [543], 9, 5)
+Member 8 achieved accuracy of 0.8342 with parameters (1, [], 7, 6)
+Member 9 achieved accuracy of 0.1009 with parameters (3, [543, 947], 5, 2)
+Member 10 achieved accuracy of 0.6225 with parameters (2, [543], 9, 5)
+Member 11 achieved accuracy of 0.6436 with parameters (5, [986, 250, 895, 253], 9, 0)
+Member 12 achieved accuracy of 0.8414 with parameters (1, [], 0, 6)
+Member 13 achieved accuracy of 0.9385 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 14 achieved accuracy of 0.2107 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 9, 6)
+Member 15 achieved accuracy of 0.9613 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.8649 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 17 achieved accuracy of 0.9392 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.7704 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 19 achieved accuracy of 0.5634 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 2)
+Average accuracy was 0.7219849999999999
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 4 survived
+member 5 survived
+member 7 survived
+member 8 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 1 and 2, child mutated
+bred together members 16 and 17, child mutated
+bred together members 12 and 0, child not mutated
+bred together members 4 and 8, child not mutated
+bred together members 2 and 17, child not mutated
+bred together members 12 and 2, child not mutated
+bred together members 15 and 16, child not mutated
+
+Generation 2
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (3, [420, 91], 7, 5)
+training member 5 (2, [543], 9, 5)
+training member 6 (1, [], 7, 6)
+training member 7 (1, [], 0, 6)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (2, [421], 9, 3)
+training member 10 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 13 (7, [870, 295, 503, 165, 90, 505], 7, 5)
+training member 14 (3, [872, 218], 0, 0)
+training member 15 (1, [], 0, 3)
+training member 16 (1, [], 7, 6)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (1, [], 0, 1)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 2:
+Member 0 achieved accuracy of 0.9616 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9328 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9143 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9389 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.8903 with parameters (3, [420, 91], 7, 5)
+Member 5 achieved accuracy of 0.2224 with parameters (2, [543], 9, 5)
+Member 6 achieved accuracy of 0.8398 with parameters (1, [], 7, 6)
+Member 7 achieved accuracy of 0.838 with parameters (1, [], 0, 6)
+Member 8 achieved accuracy of 0.9438 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9557 with parameters (2, [421], 9, 3)
+Member 10 achieved accuracy of 0.8765 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 11 achieved accuracy of 0.9309 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.6787 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 13 achieved accuracy of 0.4216 with parameters (7, [870, 295, 503, 165, 90, 505], 7, 5)
+Member 14 achieved accuracy of 0.8061 with parameters (3, [872, 218], 0, 0)
+Member 15 achieved accuracy of 0.9197 with parameters (1, [], 0, 3)
+Member 16 achieved accuracy of 0.8379 with parameters (1, [], 7, 6)
+Member 17 achieved accuracy of 0.9365 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.9039 with parameters (1, [], 0, 1)
+Member 19 achieved accuracy of 0.9565 with parameters (2, [421], 9, 3)
+Average accuracy was 0.835295
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+member 19 survived
+bred together members 11 and 7, child not mutated
+bred together members 6 and 18, child not mutated
+bred together members 16 and 9, child not mutated
+bred together members 0 and 2, child not mutated
+
+Generation 3
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (3, [420, 91], 7, 5)
+training member 5 (1, [], 7, 6)
+training member 6 (1, [], 0, 6)
+training member 7 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 10 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 11 (1, [], 0, 3)
+training member 12 (1, [], 7, 6)
+training member 13 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 14 (1, [], 0, 1)
+training member 15 (2, [421], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 0, 6)
+training member 17 (1, [], 0, 1)
+training member 18 (2, [421], 9, 6)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 3:
+Member 0 achieved accuracy of 0.9618 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9317 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9211 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.949 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.848 with parameters (3, [420, 91], 7, 5)
+Member 5 achieved accuracy of 0.8402 with parameters (1, [], 7, 6)
+Member 6 achieved accuracy of 0.837 with parameters (1, [], 0, 6)
+Member 7 achieved accuracy of 0.9493 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 8 achieved accuracy of 0.9613 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.8623 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 10 achieved accuracy of 0.9451 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 11 achieved accuracy of 0.9203 with parameters (1, [], 0, 3)
+Member 12 achieved accuracy of 0.8351 with parameters (1, [], 7, 6)
+Member 13 achieved accuracy of 0.9459 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 14 achieved accuracy of 0.9049 with parameters (1, [], 0, 1)
+Member 15 achieved accuracy of 0.9573 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.4199 with parameters (7, [974, 332, 383, 301, 964, 998], 0, 6)
+Member 17 achieved accuracy of 0.904 with parameters (1, [], 0, 1)
+Member 18 achieved accuracy of 0.8876 with parameters (2, [421], 9, 6)
+Member 19 achieved accuracy of 0.9601 with parameters (2, [421], 9, 3)
+Average accuracy was 0.8870950000000001
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 7 survived
+member 8 survived
+member 10 survived
+member 11 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 17 survived
+member 18 survived
+member 19 survived
+bred together members 19 and 10, child not mutated
+bred together members 8 and 17, child not mutated
+bred together members 17 and 3, child not mutated
+bred together members 3 and 15, child mutated
+bred together members 11 and 15, child not mutated
+bred together members 18 and 10, child not mutated
+
+Generation 4
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 6)
+training member 13 (2, [421], 9, 3)
+training member 14 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 15 (1, [], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 7, 1)
+training member 17 (1, [], 3, 2)
+training member 18 (1, [], 9, 3)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 4:
+Member 0 achieved accuracy of 0.9595 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9335 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.8512 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9452 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9542 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9577 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.936 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9167 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.94 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9024 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9621 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9052 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.8923 with parameters (2, [421], 9, 6)
+Member 13 achieved accuracy of 0.9628 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.1009 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 15 achieved accuracy of 0.9174 with parameters (1, [], 9, 3)
+Member 16 achieved accuracy of 0.8158 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 1)
+Member 17 achieved accuracy of 0.9193 with parameters (1, [], 3, 2)
+Member 18 achieved accuracy of 0.9206 with parameters (1, [], 9, 3)
+Member 19 achieved accuracy of 0.101 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Average accuracy was 0.8396899999999998
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 17 survived
+member 18 survived
+bred together members 3 and 13, child not mutated
+bred together members 17 and 0, child not mutated
+bred together members 3 and 9, child not mutated
+
+Generation 5
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 6)
+training member 13 (2, [421], 9, 3)
+training member 14 (1, [], 9, 3)
+training member 15 (1, [], 3, 2)
+training member 16 (1, [], 9, 3)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (1, [], 3, 2)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 0, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 5:
+Member 0 achieved accuracy of 0.9513 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9301 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9199 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9484 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9426 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9588 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.95 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9178 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.954 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.905 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9597 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9025 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.8874 with parameters (2, [421], 9, 6)
+Member 13 achieved accuracy of 0.9601 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.9192 with parameters (1, [], 9, 3)
+Member 15 achieved accuracy of 0.9217 with parameters (1, [], 3, 2)
+Member 16 achieved accuracy of 0.9155 with parameters (1, [], 9, 3)
+Member 17 achieved accuracy of 0.9337 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.9114 with parameters (1, [], 3, 2)
+Member 19 achieved accuracy of 0.1009 with parameters (7, [974, 332, 383, 301, 964, 998], 0, 3)
+Average accuracy was 0.8895
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 13 and 3, child not mutated
+bred together members 6 and 8, child not mutated
+
+Generation 6
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 3)
+training member 13 (1, [], 9, 3)
+training member 14 (1, [], 3, 2)
+training member 15 (1, [], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 17 (1, [], 3, 2)
+training member 18 (2, [421], 9, 3)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 6:
+Member 0 achieved accuracy of 0.9592 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9327 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9361 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9366 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.939 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9549 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.9391 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.915 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.9523 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9047 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9532 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9059 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.9518 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.919 with parameters (1, [], 9, 3)
+Member 14 achieved accuracy of 0.9153 with parameters (1, [], 3, 2)
+Member 15 achieved accuracy of 0.9178 with parameters (1, [], 9, 3)
+Member 16 achieved accuracy of 0.9347 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 17 achieved accuracy of 0.9125 with parameters (1, [], 3, 2)
+Member 18 achieved accuracy of 0.9543 with parameters (2, [421], 9, 3)
+Member 19 achieved accuracy of 0.9395 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Average accuracy was 0.9336800000000001
+Surviving members:
+member 0 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 8 survived
+member 10 survived
+member 12 survived
+member 16 survived
+member 18 survived
+member 19 survived
+bred together members 5 and 12, child not mutated
+bred together members 18 and 19, child mutated
+bred together members 10 and 19, child mutated
+bred together members 0 and 18, child not mutated
+bred together members 16 and 0, child not mutated
+bred together members 8 and 5, child not mutated
+bred together members 2 and 16, child not mutated
+bred together members 10 and 5, child not mutated
+
+Generation 7
+training member 0 (2, [421], 9, 3)
+training member 1 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (2, [421], 9, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 10 (2, [421], 9, 3)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (2, [421], 9, 3)
+training member 13 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 14 (8, [469, 679, 686, 345, 152, 345, 576], 0, 2)
+training member 15 (2, [421], 9, 3)
+training member 16 (2, [421], 7, 3)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 18 (8, [549, 305, 380, 907, 537, 226, 204], 0, 3)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 7:
+Member 0 achieved accuracy of 0.961 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9192 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 2 achieved accuracy of 0.9522 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.9479 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 5 achieved accuracy of 0.9492 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9324 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9636 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9605 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.9461 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 10 achieved accuracy of 0.9533 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9488 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.9588 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.9202 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 14 achieved accuracy of 0.1009 with parameters (8, [469, 679, 686, 345, 152, 345, 576], 0, 2)
+Member 15 achieved accuracy of 0.961 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.9575 with parameters (2, [421], 7, 3)
+Member 17 achieved accuracy of 0.1135 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 18 achieved accuracy of 0.2342 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 3)
+Member 19 achieved accuracy of 0.9505 with parameters (2, [421], 9, 3)
+Average accuracy was 0.8294699999999999
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 16 survived
+member 19 survived
+bred together members 5 and 8, child mutated
+bred together members 11 and 15, child not mutated
+bred together members 19 and 13, child not mutated
+
+Generation 8
+training member 0 (2, [421], 9, 3)
+training member 1 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (2, [421], 9, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 10 (2, [421], 9, 3)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (2, [421], 9, 3)
+training member 13 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 14 (2, [421], 9, 3)
+training member 15 (2, [421], 7, 3)
+training member 16 (2, [421], 9, 3)
+training member 17 (7, [925, 969, 735, 113, 367, 497], 6, 1)
+training member 18 (2, [421], 9, 3)
+training member 19 (2, [421], 2, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 8:
+Member 0 achieved accuracy of 0.9534 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.8828 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 2 achieved accuracy of 0.9283 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.941 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9637 with parameters (2, [421], 9, 3)
+Member 5 achieved accuracy of 0.9347 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9354 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9617 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9571 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.937 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 10 achieved accuracy of 0.954 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9399 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.9606 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.9393 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 14 achieved accuracy of 0.9647 with parameters (2, [421], 9, 3)
+Member 15 achieved accuracy of 0.9572 with parameters (2, [421], 7, 3)
+Member 16 achieved accuracy of 0.9555 with parameters (2, [421], 9, 3)
+Member 17 achieved accuracy of 0.1009 with parameters (7, [925, 969, 735, 113, 367, 497], 6, 1)
+Member 18 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 19 achieved accuracy of 0.969 with parameters (2, [421], 2, 3)
+Average accuracy was 0.9047400000000001
+Surviving members:
+member 0 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 16 survived
+member 18 survived
+member 19 survived
+bred together members 3 and 12, child not mutated
+bred together members 11 and 14, child not mutated
+
+Generation 9
+training member 0 (2, [421], 9, 3)
+training member 1 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (2, [421], 9, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (2, [421], 9, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (2, [421], 9, 3)
+training member 10 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 11 (2, [421], 9, 3)
+training member 12 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 13 (2, [421], 9, 3)
+training member 14 (2, [421], 7, 3)
+training member 15 (2, [421], 9, 3)
+training member 16 (2, [421], 9, 3)
+training member 17 (2, [421], 2, 3)
+training member 18 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 19 (2, [421], 7, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 9:
+Member 0 achieved accuracy of 0.9582 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.948 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 2 achieved accuracy of 0.9462 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 4 achieved accuracy of 0.947 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9547 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9581 with parameters (2, [421], 9, 3)
+Member 7 achieved accuracy of 0.9592 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9411 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9591 with parameters (2, [421], 9, 3)
+Member 10 achieved accuracy of 0.9377 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 11 achieved accuracy of 0.9537 with parameters (2, [421], 9, 3)
+Member 12 achieved accuracy of 0.9349 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 13 achieved accuracy of 0.9583 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.9533 with parameters (2, [421], 7, 3)
+Member 15 achieved accuracy of 0.9604 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.9605 with parameters (2, [421], 9, 3)
+Member 17 achieved accuracy of 0.9676 with parameters (2, [421], 2, 3)
+Member 18 achieved accuracy of 0.1009 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 19 achieved accuracy of 0.956 with parameters (2, [421], 7, 3)
+Best performer was member 0 with an accuracy of 0.9582Generation 0
+training member 0 (7, [687, 244, 479, 465, 470, 721], 9, 4)
+training member 1 (7, [624, 741, 149, 813, 586, 228], 6, 2)
+training member 2 (2, [421], 9, 3)
+training member 3 (6, [369, 835, 144, 356, 737], 1, 5)
+training member 4 (2, [476], 9, 1)
+training member 5 (9, [875, 235, 877, 268, 364, 86, 396, 987], 8, 2)
+training member 6 (6, [641, 733, 144, 179, 856], 7, 0)
+training member 7 (8, [254, 162, 385, 503, 405, 752, 909], 2, 4)
+training member 8 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 9 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 10 (6, [263, 324, 857, 909, 210], 9, 6)
+training member 11 (6, [787, 476, 852, 275, 84], 6, 6)
+training member 12 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 13 (3, [420, 91], 7, 5)
+training member 14 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 15 (6, [589, 259, 352, 329, 327], 6, 5)
+training member 16 (2, [543], 9, 5)
+training member 17 (1, [], 7, 6)
+training member 18 (3, [543, 947], 5, 2)
+training member 19 (6, [963, 706, 985, 758, 545], 8, 1)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 0:
+Member 0 achieved accuracy of 0.4048 with parameters (7, [687, 244, 479, 465, 470, 721], 9, 4)
+Member 1 achieved accuracy of 0.1008 with parameters (7, [624, 741, 149, 813, 586, 228], 6, 2)
+Member 2 achieved accuracy of 0.9612 with parameters (2, [421], 9, 3)
+Member 3 achieved accuracy of 0.1009 with parameters (6, [369, 835, 144, 356, 737], 1, 5)
+Member 4 achieved accuracy of 0.9312 with parameters (2, [476], 9, 1)
+Member 5 achieved accuracy of 0.1009 with parameters (9, [875, 235, 877, 268, 364, 86, 396, 987], 8, 2)
+Member 6 achieved accuracy of 0.1135 with parameters (6, [641, 733, 144, 179, 856], 7, 0)
+Member 7 achieved accuracy of 0.1032 with parameters (8, [254, 162, 385, 503, 405, 752, 909], 2, 4)
+Member 8 achieved accuracy of 0.9236 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 9 achieved accuracy of 0.8541 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 10 achieved accuracy of 0.1009 with parameters (6, [263, 324, 857, 909, 210], 9, 6)
+Member 11 achieved accuracy of 0.212 with parameters (6, [787, 476, 852, 275, 84], 6, 6)
+Member 12 achieved accuracy of 0.9253 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 13 achieved accuracy of 0.9083 with parameters (3, [420, 91], 7, 5)
+Member 14 achieved accuracy of 0.6792 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 15 achieved accuracy of 0.1009 with parameters (6, [589, 259, 352, 329, 327], 6, 5)
+Member 16 achieved accuracy of 0.5236 with parameters (2, [543], 9, 5)
+Member 17 achieved accuracy of 0.838 with parameters (1, [], 7, 6)
+Member 18 achieved accuracy of 0.4928 with parameters (3, [543, 947], 5, 2)
+Member 19 achieved accuracy of 0.2003 with parameters (6, [963, 706, 985, 758, 545], 8, 1)
+Average accuracy was 0.478775
+Surviving members:
+member 2 survived
+member 4 survived
+member 8 survived
+member 9 survived
+member 12 survived
+member 13 survived
+member 14 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 4 and 16, child not mutated
+bred together members 14 and 9, child mutated
+bred together members 17 and 8, child not mutated
+bred together members 18 and 12, child not mutated
+bred together members 14 and 9, child not mutated
+bred together members 2 and 14, child not mutated
+bred together members 2 and 9, child not mutated
+bred together members 8 and 12, child not mutated
+bred together members 14 and 13, child not mutated
+bred together members 18 and 12, child not mutated
+
+Generation 1
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (3, [420, 91], 7, 5)
+training member 6 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 7 (2, [543], 9, 5)
+training member 8 (1, [], 7, 6)
+training member 9 (3, [543, 947], 5, 2)
+training member 10 (2, [543], 9, 5)
+training member 11 (5, [986, 250, 895, 253], 9, 0)
+training member 12 (1, [], 0, 6)
+training member 13 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 14 (9, [990, 393, 182, 332, 308, 508, 321, 829], 9, 6)
+training member 15 (2, [421], 9, 3)
+training member 16 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 7, 2)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 1:
+Member 0 achieved accuracy of 0.9598 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9329 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9399 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.5645 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 4 achieved accuracy of 0.9424 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.8524 with parameters (3, [420, 91], 7, 5)
+Member 6 achieved accuracy of 0.1009 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 7 achieved accuracy of 0.8559 with parameters (2, [543], 9, 5)
+Member 8 achieved accuracy of 0.8342 with parameters (1, [], 7, 6)
+Member 9 achieved accuracy of 0.1009 with parameters (3, [543, 947], 5, 2)
+Member 10 achieved accuracy of 0.6225 with parameters (2, [543], 9, 5)
+Member 11 achieved accuracy of 0.6436 with parameters (5, [986, 250, 895, 253], 9, 0)
+Member 12 achieved accuracy of 0.8414 with parameters (1, [], 0, 6)
+Member 13 achieved accuracy of 0.9385 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 14 achieved accuracy of 0.2107 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 9, 6)
+Member 15 achieved accuracy of 0.9613 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.8649 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 17 achieved accuracy of 0.9392 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.7704 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 19 achieved accuracy of 0.5634 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 2)
+Average accuracy was 0.7219849999999999
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 4 survived
+member 5 survived
+member 7 survived
+member 8 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 1 and 2, child mutated
+bred together members 16 and 17, child mutated
+bred together members 12 and 0, child not mutated
+bred together members 4 and 8, child not mutated
+bred together members 2 and 17, child not mutated
+bred together members 12 and 2, child not mutated
+bred together members 15 and 16, child not mutated
+
+Generation 2
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (3, [420, 91], 7, 5)
+training member 5 (2, [543], 9, 5)
+training member 6 (1, [], 7, 6)
+training member 7 (1, [], 0, 6)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (2, [421], 9, 3)
+training member 10 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+training member 13 (7, [870, 295, 503, 165, 90, 505], 7, 5)
+training member 14 (3, [872, 218], 0, 0)
+training member 15 (1, [], 0, 3)
+training member 16 (1, [], 7, 6)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (1, [], 0, 1)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 2:
+Member 0 achieved accuracy of 0.9616 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9328 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9143 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9389 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.8903 with parameters (3, [420, 91], 7, 5)
+Member 5 achieved accuracy of 0.2224 with parameters (2, [543], 9, 5)
+Member 6 achieved accuracy of 0.8398 with parameters (1, [], 7, 6)
+Member 7 achieved accuracy of 0.838 with parameters (1, [], 0, 6)
+Member 8 achieved accuracy of 0.9438 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9557 with parameters (2, [421], 9, 3)
+Member 10 achieved accuracy of 0.8765 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 11 achieved accuracy of 0.9309 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.6787 with parameters (9, [990, 393, 182, 332, 308, 508, 321, 829], 5, 1)
+Member 13 achieved accuracy of 0.4216 with parameters (7, [870, 295, 503, 165, 90, 505], 7, 5)
+Member 14 achieved accuracy of 0.8061 with parameters (3, [872, 218], 0, 0)
+Member 15 achieved accuracy of 0.9197 with parameters (1, [], 0, 3)
+Member 16 achieved accuracy of 0.8379 with parameters (1, [], 7, 6)
+Member 17 achieved accuracy of 0.9365 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.9039 with parameters (1, [], 0, 1)
+Member 19 achieved accuracy of 0.9565 with parameters (2, [421], 9, 3)
+Average accuracy was 0.835295
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+member 19 survived
+bred together members 11 and 7, child not mutated
+bred together members 6 and 18, child not mutated
+bred together members 16 and 9, child not mutated
+bred together members 0 and 2, child not mutated
+
+Generation 3
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (3, [420, 91], 7, 5)
+training member 5 (1, [], 7, 6)
+training member 6 (1, [], 0, 6)
+training member 7 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (6, [670, 875, 946, 80, 185], 9, 6)
+training member 10 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 11 (1, [], 0, 3)
+training member 12 (1, [], 7, 6)
+training member 13 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 14 (1, [], 0, 1)
+training member 15 (2, [421], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 0, 6)
+training member 17 (1, [], 0, 1)
+training member 18 (2, [421], 9, 6)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 3:
+Member 0 achieved accuracy of 0.9618 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9317 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9211 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.949 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.848 with parameters (3, [420, 91], 7, 5)
+Member 5 achieved accuracy of 0.8402 with parameters (1, [], 7, 6)
+Member 6 achieved accuracy of 0.837 with parameters (1, [], 0, 6)
+Member 7 achieved accuracy of 0.9493 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 8 achieved accuracy of 0.9613 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.8623 with parameters (6, [670, 875, 946, 80, 185], 9, 6)
+Member 10 achieved accuracy of 0.9451 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 11 achieved accuracy of 0.9203 with parameters (1, [], 0, 3)
+Member 12 achieved accuracy of 0.8351 with parameters (1, [], 7, 6)
+Member 13 achieved accuracy of 0.9459 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 14 achieved accuracy of 0.9049 with parameters (1, [], 0, 1)
+Member 15 achieved accuracy of 0.9573 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.4199 with parameters (7, [974, 332, 383, 301, 964, 998], 0, 6)
+Member 17 achieved accuracy of 0.904 with parameters (1, [], 0, 1)
+Member 18 achieved accuracy of 0.8876 with parameters (2, [421], 9, 6)
+Member 19 achieved accuracy of 0.9601 with parameters (2, [421], 9, 3)
+Average accuracy was 0.8870950000000001
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 7 survived
+member 8 survived
+member 10 survived
+member 11 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 17 survived
+member 18 survived
+member 19 survived
+bred together members 19 and 10, child not mutated
+bred together members 8 and 17, child not mutated
+bred together members 17 and 3, child not mutated
+bred together members 3 and 15, child mutated
+bred together members 11 and 15, child not mutated
+bred together members 18 and 10, child not mutated
+
+Generation 4
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 6)
+training member 13 (2, [421], 9, 3)
+training member 14 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 15 (1, [], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 7, 1)
+training member 17 (1, [], 3, 2)
+training member 18 (1, [], 9, 3)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 4:
+Member 0 achieved accuracy of 0.9595 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9335 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.8512 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9452 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9542 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9577 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.936 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9167 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.94 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9024 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9621 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9052 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.8923 with parameters (2, [421], 9, 6)
+Member 13 achieved accuracy of 0.9628 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.1009 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 15 achieved accuracy of 0.9174 with parameters (1, [], 9, 3)
+Member 16 achieved accuracy of 0.8158 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 1)
+Member 17 achieved accuracy of 0.9193 with parameters (1, [], 3, 2)
+Member 18 achieved accuracy of 0.9206 with parameters (1, [], 9, 3)
+Member 19 achieved accuracy of 0.101 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Average accuracy was 0.8396899999999998
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 17 survived
+member 18 survived
+bred together members 3 and 13, child not mutated
+bred together members 17 and 0, child not mutated
+bred together members 3 and 9, child not mutated
+
+Generation 5
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 6)
+training member 13 (2, [421], 9, 3)
+training member 14 (1, [], 9, 3)
+training member 15 (1, [], 3, 2)
+training member 16 (1, [], 9, 3)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 18 (1, [], 3, 2)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 0, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 5:
+Member 0 achieved accuracy of 0.9513 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9301 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9199 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9484 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9426 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9588 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.95 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9178 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.954 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.905 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9597 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9025 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.8874 with parameters (2, [421], 9, 6)
+Member 13 achieved accuracy of 0.9601 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.9192 with parameters (1, [], 9, 3)
+Member 15 achieved accuracy of 0.9217 with parameters (1, [], 3, 2)
+Member 16 achieved accuracy of 0.9155 with parameters (1, [], 9, 3)
+Member 17 achieved accuracy of 0.9337 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 18 achieved accuracy of 0.9114 with parameters (1, [], 3, 2)
+Member 19 achieved accuracy of 0.1009 with parameters (7, [974, 332, 383, 301, 964, 998], 0, 3)
+Average accuracy was 0.8895
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 16 survived
+member 17 survived
+member 18 survived
+bred together members 13 and 3, child not mutated
+bred together members 6 and 8, child not mutated
+
+Generation 6
+training member 0 (2, [421], 9, 3)
+training member 1 (2, [476], 9, 1)
+training member 2 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (2, [421], 9, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (1, [], 0, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (1, [], 0, 1)
+training member 10 (2, [421], 9, 3)
+training member 11 (1, [], 0, 1)
+training member 12 (2, [421], 9, 3)
+training member 13 (1, [], 9, 3)
+training member 14 (1, [], 3, 2)
+training member 15 (1, [], 9, 3)
+training member 16 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 17 (1, [], 3, 2)
+training member 18 (2, [421], 9, 3)
+training member 19 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 6:
+Member 0 achieved accuracy of 0.9592 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9327 with parameters (2, [476], 9, 1)
+Member 2 achieved accuracy of 0.9361 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 3 achieved accuracy of 0.9366 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.939 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9549 with parameters (2, [421], 9, 3)
+Member 6 achieved accuracy of 0.9391 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.915 with parameters (1, [], 0, 3)
+Member 8 achieved accuracy of 0.9523 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9047 with parameters (1, [], 0, 1)
+Member 10 achieved accuracy of 0.9532 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9059 with parameters (1, [], 0, 1)
+Member 12 achieved accuracy of 0.9518 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.919 with parameters (1, [], 9, 3)
+Member 14 achieved accuracy of 0.9153 with parameters (1, [], 3, 2)
+Member 15 achieved accuracy of 0.9178 with parameters (1, [], 9, 3)
+Member 16 achieved accuracy of 0.9347 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 17 achieved accuracy of 0.9125 with parameters (1, [], 3, 2)
+Member 18 achieved accuracy of 0.9543 with parameters (2, [421], 9, 3)
+Member 19 achieved accuracy of 0.9395 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Average accuracy was 0.9336800000000001
+Surviving members:
+member 0 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 8 survived
+member 10 survived
+member 12 survived
+member 16 survived
+member 18 survived
+member 19 survived
+bred together members 5 and 12, child not mutated
+bred together members 18 and 19, child mutated
+bred together members 10 and 19, child mutated
+bred together members 0 and 18, child not mutated
+bred together members 16 and 0, child not mutated
+bred together members 8 and 5, child not mutated
+bred together members 2 and 16, child not mutated
+bred together members 10 and 5, child not mutated
+
+Generation 7
+training member 0 (2, [421], 9, 3)
+training member 1 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (2, [421], 9, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 10 (2, [421], 9, 3)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (2, [421], 9, 3)
+training member 13 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 14 (8, [469, 679, 686, 345, 152, 345, 576], 0, 2)
+training member 15 (2, [421], 9, 3)
+training member 16 (2, [421], 7, 3)
+training member 17 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 18 (8, [549, 305, 380, 907, 537, 226, 204], 0, 3)
+training member 19 (2, [421], 9, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 7:
+Member 0 achieved accuracy of 0.961 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.9192 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 2 achieved accuracy of 0.9522 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.9479 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 5 achieved accuracy of 0.9492 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9324 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9636 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9605 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.9461 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 10 achieved accuracy of 0.9533 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9488 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.9588 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.9202 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 14 achieved accuracy of 0.1009 with parameters (8, [469, 679, 686, 345, 152, 345, 576], 0, 2)
+Member 15 achieved accuracy of 0.961 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.9575 with parameters (2, [421], 7, 3)
+Member 17 achieved accuracy of 0.1135 with parameters (7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 18 achieved accuracy of 0.2342 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 3)
+Member 19 achieved accuracy of 0.9505 with parameters (2, [421], 9, 3)
+Average accuracy was 0.8294699999999999
+Surviving members:
+member 0 survived
+member 1 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 15 survived
+member 16 survived
+member 19 survived
+bred together members 5 and 8, child mutated
+bred together members 11 and 15, child not mutated
+bred together members 19 and 13, child not mutated
+
+Generation 8
+training member 0 (2, [421], 9, 3)
+training member 1 (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 4 (2, [421], 9, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (2, [421], 9, 3)
+training member 9 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 10 (2, [421], 9, 3)
+training member 11 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 12 (2, [421], 9, 3)
+training member 13 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 14 (2, [421], 9, 3)
+training member 15 (2, [421], 7, 3)
+training member 16 (2, [421], 9, 3)
+training member 17 (7, [925, 969, 735, 113, 367, 497], 6, 1)
+training member 18 (2, [421], 9, 3)
+training member 19 (2, [421], 2, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 8:
+Member 0 achieved accuracy of 0.9534 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.8828 with parameters (8, [549, 305, 380, 907, 537, 226, 204], 0, 1)
+Member 2 achieved accuracy of 0.9283 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.941 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 4 achieved accuracy of 0.9637 with parameters (2, [421], 9, 3)
+Member 5 achieved accuracy of 0.9347 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9354 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 7 achieved accuracy of 0.9617 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9571 with parameters (2, [421], 9, 3)
+Member 9 achieved accuracy of 0.937 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 10 achieved accuracy of 0.954 with parameters (2, [421], 9, 3)
+Member 11 achieved accuracy of 0.9399 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 12 achieved accuracy of 0.9606 with parameters (2, [421], 9, 3)
+Member 13 achieved accuracy of 0.9393 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 14 achieved accuracy of 0.9647 with parameters (2, [421], 9, 3)
+Member 15 achieved accuracy of 0.9572 with parameters (2, [421], 7, 3)
+Member 16 achieved accuracy of 0.9555 with parameters (2, [421], 9, 3)
+Member 17 achieved accuracy of 0.1009 with parameters (7, [925, 969, 735, 113, 367, 497], 6, 1)
+Member 18 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 19 achieved accuracy of 0.969 with parameters (2, [421], 2, 3)
+Average accuracy was 0.9047400000000001
+Surviving members:
+member 0 survived
+member 2 survived
+member 3 survived
+member 4 survived
+member 5 survived
+member 6 survived
+member 7 survived
+member 8 survived
+member 9 survived
+member 10 survived
+member 11 survived
+member 12 survived
+member 13 survived
+member 14 survived
+member 15 survived
+member 16 survived
+member 18 survived
+member 19 survived
+bred together members 3 and 12, child not mutated
+bred together members 11 and 14, child not mutated
+
+Generation 9
+training member 0 (2, [421], 9, 3)
+training member 1 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 2 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 3 (2, [421], 9, 3)
+training member 4 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 5 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 6 (2, [421], 9, 3)
+training member 7 (2, [421], 9, 3)
+training member 8 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 9 (2, [421], 9, 3)
+training member 10 (7, [974, 332, 383, 301, 964, 998], 7, 3)
+training member 11 (2, [421], 9, 3)
+training member 12 (6, [839, 601, 398, 438, 604], 2, 3)
+training member 13 (2, [421], 9, 3)
+training member 14 (2, [421], 7, 3)
+training member 15 (2, [421], 9, 3)
+training member 16 (2, [421], 9, 3)
+training member 17 (2, [421], 2, 3)
+training member 18 (7, [974, 332, 383, 301, 964, 998], 9, 3)
+training member 19 (2, [421], 7, 3)
+testing member 0
+testing member 1
+testing member 2
+testing member 3
+testing member 4
+testing member 5
+testing member 6
+testing member 7
+testing member 8
+testing member 9
+testing member 10
+testing member 11
+testing member 12
+testing member 13
+testing member 14
+testing member 15
+testing member 16
+testing member 17
+testing member 18
+testing member 19
+Performance Summary of Generation 9:
+Member 0 achieved accuracy of 0.9582 with parameters (2, [421], 9, 3)
+Member 1 achieved accuracy of 0.948 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 2 achieved accuracy of 0.9462 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 3 achieved accuracy of 0.9586 with parameters (2, [421], 9, 3)
+Member 4 achieved accuracy of 0.947 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 5 achieved accuracy of 0.9547 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 6 achieved accuracy of 0.9581 with parameters (2, [421], 9, 3)
+Member 7 achieved accuracy of 0.9592 with parameters (2, [421], 9, 3)
+Member 8 achieved accuracy of 0.9411 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 9 achieved accuracy of 0.9591 with parameters (2, [421], 9, 3)
+Member 10 achieved accuracy of 0.9377 with parameters (7, [974, 332, 383, 301, 964, 998], 7, 3)
+Member 11 achieved accuracy of 0.9537 with parameters (2, [421], 9, 3)
+Member 12 achieved accuracy of 0.9349 with parameters (6, [839, 601, 398, 438, 604], 2, 3)
+Member 13 achieved accuracy of 0.9583 with parameters (2, [421], 9, 3)
+Member 14 achieved accuracy of 0.9533 with parameters (2, [421], 7, 3)
+Member 15 achieved accuracy of 0.9604 with parameters (2, [421], 9, 3)
+Member 16 achieved accuracy of 0.9605 with parameters (2, [421], 9, 3)
+Member 17 achieved accuracy of 0.9676 with parameters (2, [421], 2, 3)
+Member 18 achieved accuracy of 0.1009 with parameters (fdsfs7, [974, 332, 383, 301, 964, 998], 9, 3)
+Member 19 achieved accuracy of 0.956 with parameters (2, [421], 7, 3)
+Best performer was member 0 with an accuracy of 0.9582

@@ -8,7 +8,7 @@ from torch.autograd import Variable
 #create a NN with random parameters
 def create_NN():
 	#pick number of layers
-	num_layers = random.randint(1, 6)
+	num_layers = random.randint(1, 9)
 
 	#pick neurons in each layer
 	neurons = list()
@@ -129,7 +129,7 @@ def test_model_performance(model):
 
 #mutates one parameter of the model
 def mutate(model):
-	return make_NN()
+	return create_NN()
 
 #creates child using parameters from two parents
 def breed(m1, m2):
