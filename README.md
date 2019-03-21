@@ -17,7 +17,6 @@ matplotlib
 ## Results
 The evolutionary algorithm found the following architecture to be optimal after 10 generations with a population size of 20 \
 NN( \
-  (activator): CELU(alpha=1.0) \
   (layers): Sequential( \
     (0): Linear(in_features=784, out_features=421, bias=True) \
     (1): CELU(alpha=1.0) \
