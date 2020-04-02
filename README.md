@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GenNet
 An evolutionary algorithm approach to design the optimal MLP architecture in PyTorch for classifying MNIST images.
 
